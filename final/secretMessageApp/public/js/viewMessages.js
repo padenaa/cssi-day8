@@ -11,12 +11,12 @@ const findMessage = (messages) => {
     for(message in messages) {
         const messageData = messages[message];
         if(messageData.passcode === passcodeAttempt) {
-            renderMessageAsHtml(messageData.message);
+            renderMessage(messageData.message);
         };
     };
 };
 
-const renderMessageAsHtml = (message) => {
+const renderMessage = (message) => {
     // Hide Input Form
     const passcodeInput = document.querySelector('#passcodeInput');
     passcodeInput.style.display = 'none';

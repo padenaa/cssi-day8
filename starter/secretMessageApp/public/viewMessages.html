@@ -14,7 +14,7 @@
     <!-- include only the Firebase features as you need -->
     <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-    <script src="js/viewMessages.js"></script>
+    <script defer src="js/viewMessages.js"></script>
   </head>
 
   <body>
@@ -38,10 +38,16 @@
             </div>
         </div>
         <section class="container">
-            <h2 id="message" class="subtitle is-4"></h2>
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <p class="title is-3" id="message">your message will be displayed here</p>
+                    </div>
+                </div>
+            </div>
         </section>
-
     </section>
+    <script defer src="js/viewMessages.js"></script>
   </body>
 
 </html>
